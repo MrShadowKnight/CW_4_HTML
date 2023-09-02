@@ -1,0 +1,35 @@
+.task {
+  background-color: #f00;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  position: relative;
+}
+.task div {
+  background-color: #00ff37;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.task :nth-child(1) {
+  z-index: 4;
+  bottom: 0;
+}
+.task :nth-child(2) {
+  background-color: #0d00ff;
+  width: 50px;
+  height: 50px;
+}
+.fixed {
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+body {
+  height: calc(6 * 100px);
+}
